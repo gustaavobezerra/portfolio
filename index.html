@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Gustavo Bezerra</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gustavo Colombo Bezerra">
+		<meta name="keywords" content="portfolio, front-end, freelancer, web designer, gustavo bezerra">
+		<meta name="viewport" content="width=device-width" content="initial-scale=1.0">
+        <meta name="description" content="Portfólio para amostra de trabalhos na área de web designer e front-end.">
+        
+		<style>
+            /* remove 000webhost banner */
+            div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"] {
+                display: none !important;
+                z-index: -9999999 !important;
+                visibility: hidden !important;
+            }
+        </style>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+            //remove 000webhost banner
+            var adBannerElement = document.querySelector("img[alt='000webhost logo']").parentNode.parentNode;
+            adBannerElement.parentNode.removeChild(adBannerElement);
+            }, false);
+        </script>
+		
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+    </head>
+
+    <body>
+        
+        <!-- TOPO -->
+        <header class="topo">
+            <h1 class="titulo-principal"><a href="index.html">Gustavo Bezerra</a></h1>
+            <a class="btn_menu" onclick="abrirMenu()"><i class="fas fa-bars"></i></a>
+            <nav id="lista">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2 class="sub_titulo sub jump" id="sobre">Sobre</h2>
+        
+        <!-- SOBRE -->
+        <section class="sobre">
+            <div>
+                <img src="imagens/perfil.jpg" class="avatar_logo" alt="">
+            </div>
+            <div>
+                <p class="paragrafo">Olá! Me chamo Gustavo, sou formado em Sistemas de Informação pela Universidade
+                Estadual do Norte do Paraná. Faço trabalhos freelancer como design gráfico desde 2014 com foco no desenvolvimento de artes para divulgações de festas e logotipos, e em constante estudo sobre as tecnologias utilizadas em front-end.</p>
+            
+                <h3 class="subsubtitulo">Interesses e Conhecimentos</h3>
+                <ul class="interesses">
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Inkscape</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Bootstrap</li>
+                    <li>JQuery</li>
+                </ul>
+                <a class="curriculo" href="cv-gustavo.pdf" target="_blank">Currículo<i class="fas fa-arrow-alt-circle-down"></i></a>
+
+            </div>
+    
+        </section>
+        
+        
+        <!-- PORTFÓLIO -->
+        <h2 class="sub_titulo margem_sub" id="portfolio">Portfólio</h2>
+        <h3 class="sub_h3">Alguns dos meus trabalhos.</h3>
+        <div class="tab_container">
+            <button class="btn_tab" onclick="showFlyer()">Flyers</button>
+            <button class="btn_tab" onclick="showLogo()">Logos</button>
+        </div>
+        <section class="portfolio">
+            
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/OVERDOSE-FLYER.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/OVERDOSE-FLYER.png" alt="Flyer de divulgação da festa Overdose.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/RESPECT-FLYER.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/RESPECT-FLYER.png" alt="Flyer de divulgação da festa Respect.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/BELA-CERVEJADA-FLYER-INICIAL.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/BELA-CERVEJADA-FLYER-INICIAL.png" alt="Flyer de divulgação da festa Bela Cervejada.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/NEXT-FLYER-INICIAL.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/NEXT-FLYER-INICIAL.png" alt="Flyer de divulgação da festa Next Showcase.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/DECOTADA-FLYER-INICIAL.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/DECOTADA-FLYER-INICIAL.png" alt="Flyer de divulgação da festa Decotada Open Bar.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/Saramandaia-Flyer.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/Saramandaia-Flyer.png" alt="Flyer de divulgação da festa Saramandaia.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/pao-trancado.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/pao-trancado.png" alt="Arte para divulgação em mídia social de pão trançado.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/MANSAO-SILVA-FLYER.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/MANSAO-SILVA-FLYER.png" alt="Flyer de divulgação da festa Mansão Silva Vip Party.">
+                </a>
+            </div>
+            
+            <div class="divs_img">
+                <a href="imagens/flyers/VELTREK.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/flyers/VELTREK.png" alt="Arte de divulgação de próximas datas do artista Veltrek.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/disconnect.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/disconnect.png" alt="Logotipo do artista disconnect.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/GOK.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/GOK.png" alt="Logotipo do artista Gok.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/gold-bear.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/gold-bear.png" alt="Logotipo da empresa Gold Bear.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/lorren.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/lorren.png" alt="Logotipo do artista Lorren.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/lothar.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/lothar.png" alt="Logotipo da empresa Lothar.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/mansao-silva.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/mansao-silva.png" alt="Logotipo da empresa Mansão Silva.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/matik.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/matik.png" alt="Logotipo do artista Matik.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/meia-7.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/meia-7.png" alt="Logotipo da empresa Meia 7 eventos.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/minigruv.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/minigruv.png" alt="Logotipo do artista Mini Gruv.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/nash.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/nash.png" alt="Logotipo do artista Nash.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/pedro-moura.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/pedro-moura.png" alt="Logotipo do artista Pedro Moura.">
+                </a>
+            </div>
+            
+            <div class="divs_logo">
+                <a href="imagens/logos/tech-soul.png" target="_blank">
+                    <img class="img_portfolio" src="imagens/logos/tech-soul.png" alt="Logotipo do artista Tech Soul.">
+                </a>
+            </div>
+
+            
+        </section>
+        
+        
+        <!-- DEPOIMENTOS -->
+        <h2 class="sub_titulo margem_sub jump" id="depoimentos">Depoimentos</h2>
+        <h3 class="sub_h3">Depoimentos de alguns clientes.</h3>
+        <section class="depoimentos">
+            <figure class="depoimento_descri">
+                <p class="paragrafo">"Presta um serviço de ótima qualidade, muito atencioso, ágil e com um preço justo."</p>
+                <figcaption class="depoimento_legenda"><span class="depoimento_nome">Matheus Souza, </span>fundador da <span class="depoimento_empresa">Continuum Entretenimento.</span></figcaption>
+            </figure>
+            
+            <figure class="depoimento_descri">
+                <p class="paragrafo">"Excelente profissional, trabalho com ele desde o fundamento da empresa gerando nossa logo e até hoje em todos os nossos eventos."</p>
+                <figcaption class="depoimento_legenda"><span class="depoimento_nome">Pedro Moura, </span>proprietário da <span class="depoimento_empresa">Meia 7 Eventos.</span></figcaption>
+            </figure>
+            
+            <figure class="depoimento_descri">
+                <p class="paragrafo">"Um ótimo profissional, com muita criatividade que nos surpreende. Responsável e sempre cumpre os prazos acordados."</p>
+                <figcaption class="depoimento_legenda"><span class="depoimento_nome">Alberto Renner, </span>fundador da <span class="depoimento_empresa">Kasike.</span></figcaption>
+            </figure>
+            
+            <figure class="depoimento_descri">
+                <p class="paragrafo">"O Gustavo sempre obteve êxito em todos os trabalhos nos quais o contratei para fazer, trabalhando com prazo curto total atenção ao cliente e uma visão sobre qualquer trabalho que você o submeter trazendo qualidade e muita dedicação em tudo que faz nos surpreendendo a cada art ou edição por ele feita."</p>
+                <figcaption class="depoimento_legenda"><span class="depoimento_nome">Victor Hugo Soto Souza De Oliveira, </span>da <span class="depoimento_empresa">Zvuk Records</span> e do projeto <span class="depoimento_empresa">Society Haus.</span></figcaption>
+            </figure>
+            
+            <figure class="depoimento_descri">
+                <p class="paragrafo">"Gostei muito do trabalho, sempre correspondeu com a expectativa, muito boa qualidade."</p>
+                <figcaption class="depoimento_legenda"><span class="depoimento_nome">Fernando Lorrenzzetti, </span>DJ e Produtor do projeto <span class="depoimento_empresa">Lorren.</span></figcaption>
+            </figure> 
+        </section>
+        
+        <!-- CONTATO -->
+        <h2 class="sub_titulo margem_sub jump" id="contato">Contato</h2>
+        <section class="contato">
+            <div class="contato_img">
+                <img src="imagens/contato.png" alt="Envelope para mensagem.">
+            </div>
+            <form class="formulario" action="email.php" method="post">
+                <label>Nome: <input type="text" required name="nome" id="cnome" maxlength="30" placeholder="Ex: João da Silva" /></label>
+                
+                <label>Email: <input type="email" required name="email" id="email" maxlength="50" placeholder="Ex: exemplo@email.com" /></label>
+                
+                <label>Assunto: <input type="text" required name="assunto" id="assunto" maxlength="30" placeholder="Ex: Front-end"/></label>
+                
+                <label>Mensagem: <textarea name="mensagem" required id="mensagem" maxlength="350" placeholder="Mensagem..."></textarea></label>
+                <input type="submit" name="enviar" value="Enviar" id="enviar">
+            </form>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+            <ul>
+                <li><a href="https://www.facebook.com/gustaavobezerra" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/gustaavobezerra" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.behance.net/gustavobezerra" target="_blank"><i class="fab fa-behance-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gustavocolombobezerra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/gustaavobezerra" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p class="paragrafo_footer">Desenvolvido por: <a href="index.html">Gustavo Bezerra</a></p>
+        </footer>
+        
+        <!-- SCRIPTS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/tabs.js"></script>
+    </body>
+
+
+
+</html>

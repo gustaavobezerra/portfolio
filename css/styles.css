@@ -1,0 +1,478 @@
+*{
+ 
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Open Sans, sans-serif;
+    background-image: url(../imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: cover;
+}
+
+.topo{
+    width: 100%;
+    height: 60px;
+    background: #ededed;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 100px #0d0d0d;
+    
+}
+
+.titulo-principal{
+    display: inline-block;
+    background: #2b1935;
+    margin: 0;
+    height: 100%;
+}
+
+.sub_h3{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.titulo-principal a{
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    user-select: none;
+}
+
+.btn_menu{
+    color: #2b1935;
+    font-size: 1.8em;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+#lista{
+    display: none;
+}
+
+#lista ul{
+    margin: 0;
+    padding: 0;
+}
+
+#lista li{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    background: #2b1935;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+}
+
+#lista a{
+    color: white;
+    padding: 10px;
+    display: block;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px #0d0d0d;
+}
+
+.sobre div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.avatar_logo{
+    max-width: 40%;
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.sub_titulo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.paragrafo{
+    text-align: justify;
+    color: #2b1935;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+.subsubtitulo{
+    color: #2b1935;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.sub{
+    margin-top: 120px;
+}
+
+.interesses{
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.interesses li{
+    display: inline;
+    color: #2b1935;
+    padding: 20px;
+}
+
+.curriculo{
+    margin: 0;
+    padding: 20px;
+    color: #2b1935;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #2b1935;
+    margin: 15px 0 35px;
+    font-weight: 600;
+}
+
+.curriculo:hover{
+    color: #6f00ad;
+    border: 1px solid #6f00ad;
+}
+
+.curriculo .fas{
+    font-size: 18px;
+    padding: 5px;
+}
+
+.margem_sub{
+    margin-top: 40px;
+}
+
+.img_portfolio{
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.btn_tab{
+    text-align: center;
+    padding: 20px;
+    color: #d8d8d8;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #d8d8d8;
+    margin: 5px;
+    font-weight: 600;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn_tab:hover{
+    color: white;
+    border: 1px solid white;
+}
+
+.btn_tab:selection{
+    background: red;
+}
+
+.tab_container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divs_logo{
+    display: none;
+}
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #ededed;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px #0d0d0d;
+}
+
+
+.depoimento_legenda{
+    color: #2b1935;
+    font-size: 14px;
+    margin: 0 40px 10px;
+    padding: 0;
+}
+
+.depoimento_descri p{
+    font-style: italic;
+}
+
+.depoimento_nome, .depoimento_empresa{
+    font-weight: 600;
+    color: purple;
+}
+
+.contato{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;    
+}
+
+.formulario{
+    color: #ededed;
+}
+
+.formulario{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    width: 400px;
+}
+
+
+.formulario input[type="text"], input[type="email"], textarea{
+    border: none;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    display: block;
+    height: 30px;
+}
+
+.formulario input[type="submit"]{
+    margin: 10px auto;
+    width: 150px;
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+}
+
+.formulario input[type="submit"]:hover{
+    color: #00f5ff;
+    border: 2px solid #00f5ff;
+    
+}
+
+.formulario textarea{
+    max-width: 100%;
+    height: 100px;
+    resize: none;
+    overflow: auto;    
+}
+
+.contato_img img{
+    max-width: 100%;
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2b1935;
+}
+
+.footer ul{
+    margin: 0;
+    padding: 15px 0;
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #ededed;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.footer ul li a:hover{
+    color: #a400ff;
+    
+}
+.footer p{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+.footer .paragrafo_footer a{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.footer .paragrafo_footer a:hover{
+    color: #ff6200;
+}
+
+@media only screen and (min-width: 550px){
+    .portfolio{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .portfolio div{
+        width: calc(100%/2);
+    }
+
+    .img_portfolio{
+        display: block;
+        max-width: 100%;
+        cursor: pointer;
+    }
+    .contato_img img{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    .portfolio{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .portfolio div{
+        width: calc(100%/3);
+    }
+
+    .img_portfolio{
+        display: block;
+        max-width: 100%;
+        cursor: pointer;
+    }
+    
+    .contato_img img{
+        max-width: 100%;
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 900px){
+    
+    .sobre{
+        flex-direction: row;
+    }
+    .sobre img{
+        max-width: 100%;
+        border-radius: 50%;
+        margin: 0;
+    }
+    
+    .sobre div{
+        margin: 30px;
+    }
+    
+    .sub_titulo{
+        font-size: 24px;
+    }
+    
+    #lista{
+        display: inline;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: auto;
+        transition: none;
+    }
+    
+    
+    #lista ul{
+        padding: 0px;
+        margin: 0px;
+        background-color:#EDEDED;
+        list-style: none;
+    }
+    
+    #lista ul li{
+        display: inline-block;
+        border: none;
+        background: none;
+    }
+    
+    #lista ul li a{
+        color: #2b1935;
+        padding: 8px;
+        margin: 0 5px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.2s linear;
+    }
+    
+    #lista ul li a:hover{
+        color: #a400ff;
+    }
+    
+    .btn_menu{
+        display: none;
+    }
+}
